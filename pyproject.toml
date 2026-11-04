@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "als-movie-recommender"
+version = "0.1.0"
+description = "A local ALS movie recommendation prototype"
+requires-python = ">=3.10,<3.12"
+
+[tool.setuptools.packages.find]
+include = ["movie_recommender*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
